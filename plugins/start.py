@@ -113,17 +113,8 @@ async def start_command(client: Client, message: Message):
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton(
-                "Channel",
-                url = client.invitelink)
-        ]
-    ]
-    buttons = [
-        [
-            InlineKeyboardButton(
-                "Group",
-                url = "http://t.me/"
-                )
+            InlineKeyboardButton("Channel", url = client.invitelink),
+            InlineKeyboardButton("Group", url = "http://t.me/")
         ]
     ]
     try:
